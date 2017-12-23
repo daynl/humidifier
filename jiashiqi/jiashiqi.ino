@@ -5,7 +5,7 @@
 #include <IRremote.h>
 #include <U8glib.h>
 #include "./SHT2x.h"
-#include <SoftwareSerial.h>
+#include <SoftwareSerial.h>//以上都是库文件和头文件
 #define INTERVAL_Time 10
 #define SSID           "mi"
 #define PASSWORD       "58586768"
@@ -23,7 +23,7 @@ bool humanHotState = false;
 unsigned long sensorlastTime = millis();
 unsigned long lcd_time = millis();
 U8GLIB_SSD1306_128X64 u8g(U8G_I2C_OPT_NONE);
-#define setFont_L u8g.setFont(u8g_font_7x13)
+#define setFont_L u8g.setFont(u8g_font_7x13)//定义OLED显示字符的大小
 float tempOLED, humiOLED, lightnessOLED;
 #define INTERVAL_OLED 1000
 String mCottenData;
@@ -43,7 +43,7 @@ void getSensorData() {
   dtostrf(sensor_tem, 2, 1, sensor_tem_c);
   dtostrf(sensor_hum, 2, 1, sensor_hum_c);
   dtostrf(sensor_lux, 3, 1, sensor_lux_c);
-}
+}//获取光照，温湿度
 void setup(void)   
 {       
     Wire.begin();
@@ -93,7 +93,7 @@ void loop(void)
         u8g.setPrintPos(100, 20);
         u8g.print(sensor_hum,DEC);
           }while( u8g.nextPage() );
-    }
+    }//OLED上显示湿度信息
     else
      u8g.firstPage();
     
@@ -157,4 +157,4 @@ void updateSensorData() {
   else {
     Serial.print("create tcp err\r\n");
   }
-}
+}//将数据上传到云端
