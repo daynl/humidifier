@@ -1,0 +1,53 @@
+/* start.wxss */
+
+.btn1{
+  width: 70%;
+  top: 20%;
+  background-color: #CCFFFF;
+  color: black;
+}
+
+.radio-group{
+  left: 30%;
+  top: 30%;
+  position: absolute
+}
+
+#input{
+  background-color: #e5e5e5;
+  width: 70%;
+  height: 88rpx;
+  top: 45%;
+  left: 18%;
+  position: absolute
+  }
+#input2{
+  background-color: #e5e5e5;
+  width: 70%;
+  height: 88rpx;
+  top: 55%;
+  left: 18%;
+  position: absolute;
+  }  
+
+  #text{
+   /* color: #888888; */
+  font-family:PingFangSC-Regular;
+  font-size:12px;
+  color: black;
+  top: 30%;
+  left: 20%;
+  position: absolute;
+
+  }
+
+  .btn3{
+  height: 88rpx;
+  top: 50%;
+  width: 70%;
+  color: pink;
+  background-color: #CCFFFF;
+  }
+page{
+  background-image: url('http://img02.tooopen.com/images/20131214/sy_51870382531.jpg')
+}

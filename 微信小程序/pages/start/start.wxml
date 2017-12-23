@@ -1,0 +1,21 @@
+<!--start.wxml-->
+
+<button class="btn1" bindtap="getDataFromOneNet">
+雾里看花</button>
+
+<!-- <radio-group class="radio-group" bindchange="radioChange">
+  <label style="display: flex"  wx:for="{{items}}">
+    <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+  </label>
+</radio-group> -->
+<!-- <h id="test">123</h> -->
+<!-- <input id="input" placeholder="输入温度门限下限" 
+placeholder-style="font-size:15px; color:#bfbfbf;" 
+style="font-weight:bolder; font-size:15px; color:#000000; padding-left: 30rpx"
+  bindinput="change"/>
+<input id="input2" placeholder="输入温度门限上限" 
+placeholder-style="font-size:15px; color:#bfbfbf;" 
+style="font-weight:bolder; font-size:15px; color:#000000; padding-left: 30rpx"
+  bindinput="change2"/> -->
+<text id="text">提示：当目前湿度异常时报警。正常范围为40~80</text>
+<button class="btn3" bindtap="send">亲，注意保湿哦</button>
